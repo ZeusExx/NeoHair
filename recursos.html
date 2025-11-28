@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NeoHair — Recursos</title>
+
+<style>
+/* -------------------- VARIÁVEIS -------------------- */
+:root {
+    --bg: #0a0a0a;
+    --card: #151515;
+    --card2: #1f1f1f;
+    --muted: #a8a8a8;
+    --accent1: #d4d4d4;
+    --accent2: #f0f0f0;
+    --silver: #c0c0c0;
+    --radius: 14px;
+    --container: 1100px;
+    --gradient: linear-gradient(135deg, #3e3e3e, #1a1a1a);
+}
+
+/* -------------------- RESET -------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background: var(--bg);
+    color: var(--accent2);
+    line-height: 1.6;
+}
+
+/* -------------------- CONTAINER -------------------- */
+.container {
+    max-width: var(--container);
+    margin: auto;
+    padding: 20px;
+}
+
+/* -------------------- HEADER -------------------- */
+.site-header {
+    background: var(--card);
+    padding: 20px 0;
+    border-bottom: 1px solid #333;
+}
+
+.header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* -------------------- NAV -------------------- */
+.nav a {
+    margin-left: 20px;
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+.nav a:hover {
+    color: var(--accent2);
+    text-shadow: 0 0 6px var(--accent1);
+}
+
+/* -------------------- SECTIONS -------------------- */
+.section {
+    margin-top: 40px;
+}
+
+.section h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.section p {
+    color: var(--silver);
+    max-width: 700px;
+}
+
+/* -------------------- CARDS -------------------- */
+.cards {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: var(--card2);
+    padding: 22px;
+    border-radius: var(--radius);
+    border: 1px solid #2c2c2c;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    background: #242424;
+}
+
+.card h4 {
+    color: var(--accent2);
+    margin-bottom: 8px;
+}
+
+/* -------------------- DIFERENCIAIS -------------------- */
+.sub-section {
+    margin-top: 50px;
+}
+
+.dif-list {
+    margin-top: 15px;
+    list-style: none;
+}
+
+.dif-list li {
+    margin-bottom: 10px;
+    color: var(--silver);
+    padding-left: 4px;
+}
+
+/* -------------------- TECNOLOGIAS -------------------- */
+.tech-section {
+    margin-top: 50px;
+}
+
+.tech-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+}
+
+.tech-item {
+    background: var(--card);
+    border: 1px solid #2a2a2a;
+    border-radius: var(--radius);
+    padding: 20px;
+    transition: 0.3s ease;
+}
+
+.tech-item:hover {
+    background: #1f1f1f;
+    transform: translateY(-4px);
+}
+
+.tech-item .icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--gradient);
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* -------------------- TABELA -------------------- */
+.specs {
+    margin-top: 60px;
+}
+
+.specs table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+    background: var(--card);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.specs td {
+    padding: 14px 18px;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.specs tr:last-child td {
+    border-bottom: none;
+}
+
+.specs td:first-child {
+    color: var(--muted);
+    width: 35%;
+}
+
+/* -------------------- FOOTER -------------------- */
+.site-footer {
+    text-align: center;
+    margin-top: 60px;
+    padding: 18px 0;
+    color: var(--muted);
+    background: var(--card);
+    border-top: 1px solid #333;
+    font-size: 14px;
+}
+
+/* -------------------- RESPONSIVO -------------------- */
+@media(max-width: 700px) {
+    .nav a {
+        margin-left: 12px;
+        font-size: 14px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .section h2 {
+        font-size: 24px;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-flex">
+        <h1 class="logo">NeoHair</h1>
+
+        <nav class="nav">
+            <a href="index.html">Início</a>
+            <a href="recursos.html">Recursos</a>
+            <a href="howork.html">Como funciona</a>
+            <a href="tec.html">Tecnologia</a>
+            <a href="equipe.html">Equipe</a>
+        </nav>
+    </div>
+</header>
+
+
+<main class="container section">
+    <h2>Recursos do NeoHair</h2>
+    <p>O NeoHair combina tecnologias de ponta para acelerar o crescimento capilar de forma segura, monitorada e personalizada.</p>
+
+    <!-- CARDS PRINCIPAIS -->
+    <div class="cards">
+        <div class="card">
+            <h4>LLLT – Luz de Baixa Intensidade</h4>
+            <p>Ativa folículos dormentes e estimula o crescimento natural.</p>
+        </div>
+
+        <div class="card">
+            <h4>Sensores Inteligentes</h4>
+            <p>Ajustam intensidade, temperatura e duração com precisão.</p>
+        </div>
+
+        <div class="card">
+            <h4>App NeoHair</h4>
+            <p>Controle remoto, relatórios de progresso e agendamento inteligente.</p>
+        </div>
+
+        <div class="card">
+            <h4>Bateria de Longa Duração</h4>
+            <p>Uso contínuo por até 14 dias com carregamento rápido.</p>
+        </div>
+
+        <div class="card">
+            <h4>Ajuste de Curvatura</h4>
+            <p>Estrutura flexível que se adapta ao formato da cabeça.</p>
+        </div>
+
+        <div class="card">
+            <h4>Modo Terapêutico</h4>
+            <p>Alternância automática entre ciclos de estímulo capilar.</p>
+        </div>
+    </div>
+
+
+    <!-- DIFERENCIAIS -->
+    <section class="section sub-section">
+        <h2>Diferenciais do NeoHair</h2>
+        <ul class="dif-list">
+            <li>✔ Resultados testados clinicamente em 8 semanas</li>
+            <li>✔ Material hipoalergênico e confortável</li>
+            <li>✔ Totalmente silencioso</li>
+            <li>✔ Compatível com iOS, Android e Windows</li>
+            <li>✔ Inteligência Artificial para análise de folículos</li>
+        </ul>
+    </section>
+
+
+    <!-- TECNOLOGIAS -->
+    <section class="tech-section">
+        <h2>Tecnologias Integradas</h2>
+        <div class="tech-grid">
+            <div class="tech-item">
+                <span class="icon"></span>
+                <h4>IA NeoCore</h4>
+                <p>Analisa padrões capilares e ajusta o tratamento automaticamente.</p>
+            </div>
+
+            <div class="tech-item">
+                <span class="icon"></span>
+                <h4>NeuroWave+</h4>
+                <p>Emite pulsos seguros e controlados para maior absorção celular.</p>
+            </div>
+
+            <div class="tech-item">
+                <span class="icon"></span>
+                <h4>BioHeat Control</h4>
+                <p>Gerencia temperatura e evita superaquecimentos.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ESPECIFICAÇÕES -->
+    <section class="specs">
+        <h2>Especificações Técnicas</h2>
+        <table>
+            <tr><td>Modelo:</td><td>NH-2025 Pro</td></tr>
+            <tr><td>Autonomia:</td><td>Até 14 dias</td></tr>
+            <tr><td>Materiais:</td><td>Polímero hipoalergênico + fibra leve</td></tr>
+            <tr><td>Temperatura:</td><td>Entre 25°C e 34°C (controlado)</td></tr>
+            <tr><td>Conectividade:</td><td>Bluetooth 5.1 / Wi-Fi SmartLink</td></tr>
+            <tr><td>Compatibilidade:</td><td>Android 10+, iOS 12+, Windows</td></tr>
+        </table>
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+    © 2025 — NeoHair. Todos os direitos reservados.
+</footer>
+
+</body>
+</html>

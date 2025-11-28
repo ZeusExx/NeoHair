@@ -1,0 +1,55 @@
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NeoHair — Equipe</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-flex">
+        <h1 class="logo">NeoHair</h1>
+
+        <nav class="nav">
+            <a href="index.html">Início</a>
+            <a href="recursos.html">Recursos</a>
+            <a href="howork.html">Como funciona</a>
+            <a href="tec.html">Tecnologia</a>
+            <a href="equipe.html">Equipe</a>
+
+        </nav>
+    </div>
+</header>
+
+<main class="container section">
+    <h2>Equipe NeoHair</h2>
+    <p>O projeto NeoHair foi desenvolvido por um time dedicado e multidisciplinar:</p>
+
+    <ul class="steps">
+        <li>Priscila Souza — Designer e pesquisadora de usabilidade.</li>
+        <li>Pedro Daitx — Programador e arquiteto do sistema.</li>
+        <li>Isadora Schardosim — Engenheira biomédica responsável pelos componentes terapêuticos.</li>
+        <li>Thayla Pereira — Documentação e pesquisa científica.</li>
+        <li>Jesus Gabriel — Modelagem 3D, prototipação e testes.</li>
+    </ul>
+
+    
+<div id="notifZeus" class="zeus-notif">
+    ACESSO NÃO AUTORIZADO: ZEUS DETECTADO
+</div>
+
+<script>
+
+window.addEventListener("load", () => {
+    const notif = document.getElementById("notifZeus");
+
+    setTimeout(() => notif.classList.add("show"), 200);
+    setTimeout(() => notif.classList.add("hide"), 1000);
+});
+</script>
+
+</main>
+
+</body>
+</html>

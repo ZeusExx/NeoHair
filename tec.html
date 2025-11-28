@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NeoHair — Tecnologia</title>
+
+<style>
+/* -------------------- VARIÁVEIS -------------------- */
+:root {
+    --bg: #0a0a0a;
+    --card: #151515;
+    --card2: #1f1f1f;
+    --muted: #a8a8a8;
+    --accent1: #d4d4d4;
+    --accent2: #f0f0f0;
+    --silver: #c0c0c0;
+    --radius: 14px;
+    --container: 1100px;
+    --grad: linear-gradient(135deg, #3d3d3d, #1a1a1a);
+}
+
+/* -------------------- RESET -------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background: var(--bg);
+    color: var(--accent2);
+    line-height: 1.6;
+}
+
+/* -------------------- CONTAINER -------------------- */
+.container {
+    max-width: var(--container);
+    margin: auto;
+    padding: 20px;
+}
+
+/* -------------------- HEADER -------------------- */
+.site-header {
+    background: var(--card);
+    padding: 20px 0;
+    border-bottom: 1px solid #2b2b2b;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* -------------------- NAVBAR -------------------- */
+.nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--muted);
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+.nav a:hover {
+    color: var(--accent2);
+    text-shadow: 0 0 6px var(--accent1);
+}
+
+/* -------------------- SECTION -------------------- */
+.section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.section p {
+    max-width: 700px;
+    color: var(--silver);
+}
+
+/* -------------------- CARDS -------------------- */
+.cards {
+    margin-top: 30px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.card {
+    background: var(--card2);
+    padding: 20px;
+    border-radius: var(--radius);
+    border: 1px solid #2a2a2a;
+    transition: 0.3s ease;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.40);
+    cursor: default;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: #262626;
+}
+
+.card h4 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: var(--muted);
+    font-size: 15px;
+}
+
+/* -------------------- RESPONSIVO -------------------- */
+@media(max-width: 700px) {
+    .nav a {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .section h2 {
+        font-size: 24px;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-flex">
+        <h1 class="logo">NeoHair</h1>
+
+        <nav class="nav">
+            <a href="index.html">Início</a>
+            <a href="recursos.html">Recursos</a>
+            <a href="howork.html">Como funciona</a>
+            <a href="tec.html">Tecnologia</a>
+            <a href="equipe.html">Equipe</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container section">
+    <h2>Tecnologia utilizada</h2>
+    <p>
+        O NeoHair combina engenharia biomédica avançada, microeletrônica e IA de otimização contínua
+        para oferecer um tratamento capilar mais eficiente, seguro e confortável.
+    </p>
+
+    <div class="cards">
+        <div class="card">
+            <h4>Matriz de LEDs Terapêuticos</h4>
+            <p>Posicionados estrategicamente com emissão LLLT de 650–680 nm para estimular folículos adormecidos.</p>
+        </div>
+
+        <div class="card">
+            <h4>IA de Ajuste Adaptativo</h4>
+            <p>Ajusta a potência, frequência e tempo de aplicação com base nos resultados individuais de cada usuário.</p>
+        </div>
+
+        <div class="card">
+            <h4>Bateria de Alta Durabilidade</h4>
+            <p>Mais de 20 sessões por carga com algoritmo de consumo inteligente para prolongar a vida útil.</p>
+        </div>
+
+        <div class="card">
+            <h4>Sensores Biométricos Integrados</h4>
+            <p>Monitoram temperatura, fluxo sanguíneo local e resposta dos folículos em tempo real.</p>
+        </div>
+
+        <div class="card">
+            <h4>Microprocessador Neural</h4>
+            <p>
+                Um chip dedicado utiliza modelos leves de machine learning para otimizar os resultados a cada sessão.
+            </p>
+        </div>
+
+        <div class="card">
+            <h4>Revestimento Termo-Regulador</h4>
+            <p>
+                Material inteligente que dissipa calor automaticamente, garantindo sessões confortáveis e seguras.
+            </p>
+        </div>
+
+        <div class="card">
+            <h4>Conectividade App Sync</h4>
+            <p>
+                Acompanha progresso, sugere rotinas e sincroniza estatísticas do couro cabeludo via Bluetooth Low Energy.
+            </p>
+        </div>
+
+        <div class="card">
+            <h4>Modo DeepStimulation™</h4>
+            <p>
+                Combina micro-pulsos luminosos e variação rítmica para alcançar camadas mais profundas da pele.
+            </p>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
